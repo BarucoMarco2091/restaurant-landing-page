@@ -1,5 +1,43 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@keyframes pulse {
+  from {
+    transform: translateY(0) scale(1);
+  }
+  to {
+    transform: translateY(-8px) scale(1.1);
+  }
+}
+footer {
+  background-color: #dd4b1a;
+  height: 10dvh;
+}
+footer .footer-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1240px;
+  margin: auto;
+  padding-top: 3dvh;
+  align-items: center;
+  text-align: center;
+}
+footer .footer-container i {
+  color: #fff;
+  gap: 3dvh;
+  transition: color 0.8s;
+  font-size: 1.2rem;
+}
+footer .footer-container i:hover {
+  color: #23A455;
+  animation: pulse 1s infinite alternate;
+}
+footer .footer-container p {
+  color: #fff;
+}
+
 header {
   background-color: #282828;
 }
@@ -23,15 +61,211 @@ nav .nav-list {
   gap: 5dvh;
   list-style-type: none;
 }
-nav .nav-list .nav-link {
+nav .nav-list a {
   text-decoration: none;
   color: #fff;
-  transition: color #23A455;
+  transition: color 0.8s;
 }
-nav .nav-list .nav-link:hover {
+nav .nav-list a:hover {
   color: #23A455;
 }
 
+main {
+  background-color: #f2f2f2;
+}
+
+h1 {
+  text-align: center;
+  padding-top: 5dvh;
+  margin-bottom: 5dvh;
+}
+
+.description {
+  text-align: center;
+  margin-bottom: 3dvh;
+  color: #363636;
+  max-width: 1240px;
+  margin: auto;
+}
+
+.food-container,
+.dessert-container,
+.drinks-container {
+  display: flex;
+  max-width: 1240px;
+  margin: auto;
+  margin-top: 3dvh;
+  gap: 4dvh;
+  background-color: #fff;
+  border-radius: 4dvh;
+  overflow: hidden;
+}
+.food-container div,
+.dessert-container div,
+.drinks-container div {
+  flex: 1;
+}
+.food-container .first-option,
+.dessert-container .first-option,
+.drinks-container .first-option {
+  margin-top: 10dvh;
+  margin-left: 5dvh;
+  border-bottom: dashed #444444 1px;
+}
+.food-container .second-option,
+.dessert-container .second-option,
+.drinks-container .second-option {
+  margin-top: 7dvh;
+  margin-left: 5dvh;
+  border-bottom: dashed #444444 1px;
+}
+.food-container .third-option,
+.dessert-container .third-option,
+.drinks-container .third-option {
+  margin-top: 7dvh;
+  margin-left: 5dvh;
+  border-bottom: dashed #444444 1px;
+}
+.food-container .dish,
+.food-container .dessert,
+.food-container .drinks,
+.dessert-container .dish,
+.dessert-container .dessert,
+.dessert-container .drinks,
+.drinks-container .dish,
+.drinks-container .dessert,
+.drinks-container .drinks {
+  display: flex;
+  justify-content: space-between;
+}
+.food-container .dish p,
+.food-container .dessert p,
+.food-container .drinks p,
+.dessert-container .dish p,
+.dessert-container .dessert p,
+.dessert-container .drinks p,
+.drinks-container .dish p,
+.drinks-container .dessert p,
+.drinks-container .drinks p {
+  color: #363636;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.food-container .dish span,
+.food-container .dessert span,
+.food-container .drinks span,
+.dessert-container .dish span,
+.dessert-container .dessert span,
+.dessert-container .drinks span,
+.drinks-container .dish span,
+.drinks-container .dessert span,
+.drinks-container .drinks span {
+  color: #dd4b1a;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.food-container p,
+.dessert-container p,
+.drinks-container p {
+  color: #f2f2f2;
+}
+.food-container .food-img img,
+.dessert-container .food-img img,
+.drinks-container .food-img img {
+  height: 100dvh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.food-container .button-menu,
+.dessert-container .button-menu,
+.drinks-container .button-menu {
+  display: flex;
+  gap: 3dvh;
+  justify-content: center;
+  margin-top: 3dvh;
+}
+.food-container .button-menu button,
+.dessert-container .button-menu button,
+.drinks-container .button-menu button {
+  border: none;
+  border-radius: 3dvh;
+  height: 6dvh;
+  width: 40dvh;
+  color: #fff;
+}
+.food-container .button-menu .whatsapp-button,
+.dessert-container .button-menu .whatsapp-button,
+.drinks-container .button-menu .whatsapp-button {
+  background-color: #dd4b1a;
+  transition: opacity 0.8s;
+}
+.food-container .button-menu .whatsapp-button:hover,
+.dessert-container .button-menu .whatsapp-button:hover,
+.drinks-container .button-menu .whatsapp-button:hover {
+  opacity: 70%;
+}
+.food-container .button-menu .menu-button,
+.dessert-container .button-menu .menu-button,
+.drinks-container .button-menu .menu-button {
+  background-color: #444444;
+  transition: opacity 0.8s;
+}
+.food-container .button-menu .menu-button:hover,
+.dessert-container .button-menu .menu-button:hover,
+.drinks-container .button-menu .menu-button:hover {
+  opacity: 70%;
+}
+
+.restaurant {
+  background-color: #F6F6F6;
+}
+.restaurant h2 {
+  text-align: center;
+  padding-top: 5dvh;
+  margin-bottom: 5dvh;
+}
+.restaurant .card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4dvh;
+  max-width: 1240px;
+  margin: auto;
+  margin-top: 4dvh;
+}
+.restaurant .card-grid .card-img img {
+  transition: transform 0.8s;
+}
+.restaurant .card-grid .card-img img:hover {
+  transform: scale(1.1);
+}
+
+.location h2 {
+  text-align: center;
+  padding-top: 5dvh;
+  margin-bottom: 5dvh;
+}
+
+@media screen and (max-width: 768px) {
+  .food-container, .dessert-container, .drinks-container {
+    display: flex;
+    flex-direction: column;
+    margin: 2dvh 2dvh;
+  }
+}
+@media screen and (max-width: 768px) {
+  .food-text {
+    flex: 1;
+    text-align: center;
+    margin-right: 2dvh;
+  }
+}
+@media screen and (max-width: 768px) {
+  .button-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+  }
+}
 * {
   margin: 0;
   padding: 0;

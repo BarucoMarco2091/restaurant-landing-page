@@ -1,0 +1,153 @@
+@import '../styles/variables.scss';
+
+main {
+    background-color: $gray;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 5dvh;
+    margin-bottom: 5dvh;
+}
+
+.description {
+    text-align: center;
+    margin-bottom: 3dvh;
+    color: $text;
+    max-width: 1240px;
+    margin: auto;
+}
+
+.food-container,
+.dessert-container,
+.drinks-container {
+    display: flex;
+    max-width: 1240px;
+    margin: auto;
+    margin-top: 3dvh;
+    gap: 4dvh;
+    background-color: $white;
+    border-radius: 4dvh;
+    overflow: hidden;
+
+    div {
+        flex: 1;
+    }
+
+    .first-option {
+        margin-top: 10dvh;
+        margin-left: 5dvh;
+        border-bottom: dashed $primaryBlack 1px;
+    }
+
+    .second-option {
+        margin-top: 7dvh;
+        margin-left: 5dvh;
+        border-bottom: dashed $primaryBlack 1px;
+    }
+
+    .third-option {
+        margin-top: 7dvh;
+        margin-left: 5dvh;
+        border-bottom: dashed $primaryBlack 1px;
+    }
+
+    .dish,
+    .dessert,
+    .drinks {
+        display: flex;
+        justify-content: space-between;
+
+        p {
+            color: $text;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        span {
+            color: $orange;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+    }
+
+    p {
+        color: $gray;
+    }
+
+    .food-img {
+
+        img {
+            height: 100dvh;
+            object-fit: cover;
+        }
+    }
+
+    .button-menu {
+        display: flex;
+        gap: 3dvh;
+        justify-content: center;
+        margin-top: 3dvh;
+
+        button {
+            border: none;
+            border-radius: 3dvh;
+            height: 6dvh;
+            width: 40dvh;
+            color: $white;
+        }
+
+        .whatsapp-button {
+            background-color: $orange;
+            transition: opacity .8s;
+        }
+
+        .whatsapp-button:hover {
+            opacity: 70%;
+        }
+
+        .menu-button {
+            background-color: $primaryBlack;
+            transition: opacity .8s;
+        }
+
+        .menu-button:hover {
+            opacity: 70%;
+        }
+    }
+}
+
+.restaurant {
+    background-color: $primaryWhite;
+
+    h2 {
+        text-align: center;
+        padding-top: 5dvh;
+        margin-bottom: 5dvh;
+    }
+
+    .card-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 4dvh;
+        max-width: 1240px;
+        margin: auto;
+        margin-top: 4dvh;
+
+        .card-img img {
+            transition: transform .8s;
+        }
+
+        .card-img img:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+
+.location {
+    h2 {
+        text-align: center;
+        padding-top: 5dvh;
+        margin-bottom: 5dvh;
+    }
+}

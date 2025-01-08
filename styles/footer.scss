@@ -1,0 +1,41 @@
+@import '../styles/variables.scss';
+
+@keyframes pulse {
+    from {
+        transform:  translateY(0) scale(1);
+    }
+    to {
+        transform: translateY(-8px) scale(1.1);
+    }
+}
+
+footer {
+    background-color: $orange;
+    height: 10dvh;
+
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1240px;
+        margin: auto;
+        padding-top: 3dvh;
+        align-items: center;
+        text-align: center;
+
+        i {
+            color: $white;
+            gap: 3dvh;
+            transition: color .8s;
+            font-size: 1.2rem;
+        }
+
+        i:hover {
+            color: $primaryGreen;
+            animation: pulse 1s infinite alternate;
+        }
+
+        p {
+            color: $white;
+        }
+    }
+}
